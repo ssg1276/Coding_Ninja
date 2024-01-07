@@ -1,0 +1,38 @@
+Problem statement
+You have been given an integer array/list(ARR) of size 'N'. It only contains 0s, 1s and 2s. Write a solution to sort this array/list.
+
+Note :
+Try to solve the problem in 'Single Scan'. ' Single Scan' refers to iterating over the array/list just once or to put it in other words, you will be visiting each element in the array/list just once.
+Detailed explanation ( Input/output format, Notes, Images )
+Constraints :
+1 <= T <= 10
+1 <= N <= (5 * (10 ^ 5))
+0 <= ARR[i] <= 2
+
+Where 'N' is the size of the given array/list.
+And, ARR[i] denotes the i-th element in the array/list.
+
+Time Limit: 1sec 
+SOLUTION:-
+#include <bits/stdc++.h> 
+void sort012(int *arr, int n)
+{
+   int l=0;
+        int m=0;
+        int h=n-1;
+        while(m<=h){
+            if(arr[m]==0){
+                swap(arr[l],arr[m]);
+                l++;
+                m++;
+            }
+            else if(arr[m]==1){
+                m++;
+            }
+            else{
+                swap(arr[h],arr[m]);
+                h--;
+            }
+        }
+
+}
