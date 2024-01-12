@@ -9,3 +9,4 @@ Q6:- https://www.codingninjas.com/studio/problems/next-greater-permutation_69295
 Q7:- https://www.codingninjas.com/studio/problems/pair-sum_1171154?topList=love-babbar-dsa-sheet-problems&problemListRedirection=true&leftPanelTabValue=SUBMISSION&count=25&search=&sort_entity=order&sort_order=ASC&customSource=studio_nav&difficulty%5B%5D=Easy&attempt_status=NOT_ATTEMPTED
 Q8:- https://www.codingninjas.com/studio/problems/majority-element_6915220?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q9:- https://www.codingninjas.com/studio/problems/three-sum_6922132?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+Q10:- https://www.codingninjas.com/studio/problems/1112602?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website&leftPanelTabValue=PROBLEM
