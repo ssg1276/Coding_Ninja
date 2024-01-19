@@ -1,0 +1,37 @@
+Problem statement
+There is an array ‘A’ of size ‘N’ with an equal number of positive and negative elements.
+
+Without altering the relative order of positive and negative numbers, you must return an array of alternative positive and negative values.
+
+Note:
+
+Start the array with a positive number. 
+For example
+
+Input:
+A = [1, 2, -4, -5], N = 4
+Output:
+1 -4  2 -5
+Explanation: 
+Positive elements = 1, 2
+Negative elements = -4, -5
+To maintain relative ordering, 1 must occur before 2, and -4 must occur before -5.
+
+SOLUTION:-
+vector<int> alternateNumbers(vector<int>&a) {
+    // Write your code here.
+    int n=a.size();
+        vector<int> ans(n,0);
+        int pos=0,neg=1;
+        for(int i=0;i<n;i++){
+            if(a[i]>0){
+            ans[pos]=a[i];
+            pos+=2;
+            }
+            else{
+                ans[neg]=a[i];
+                neg+=2;
+            }
+        }
+        return ans;
+}
