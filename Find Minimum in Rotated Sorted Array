@@ -1,0 +1,35 @@
+Problem statement
+You are given an array 'arr' of size 'n' having unique elements that has been sorted in ascending order and rotated between 1 and 'n' times which is unknown.
+The rotation involves shifting every element to the right, with the last element moving to the first position. For example, if 'arr' = [1, 2, 3, 4] was rotated one time, it would become [4, 1, 2, 3].
+Your task is to find the minimum number in this array.
+Note :
+All the elements in the array are distinct. 
+
+
+Example :
+Input: arr = [3,4,5,1,2]
+
+Output: 1
+
+SOLUTION:-
+int findMin(vector<int>& arr)
+{
+	// Write your code here.
+	int n=arr.size();
+	int l=0;
+	int h=n-1;
+	int mini=INT_MAX;
+	while(l<=h){
+		int mid=(l+h)/2;
+		if(arr[l]<=arr[mid]){
+			mini=min(mini,arr[l]);
+			l=mid+1;
+		}
+		else{
+			mini=min(mini,arr[mid]);
+			h=mid-1;
+		}
+ 
+	}
+	return mini;
+}
