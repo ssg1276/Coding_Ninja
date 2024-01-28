@@ -1,0 +1,44 @@
+Problem statement
+You are given an array 'arr' having 'n' distinct integers sorted in ascending order. The array is right rotated 'r' times
+Find the minimum value of 'r'.
+
+Right rotating an array means shifting the element at 'ith' index to (‘i+1') mod 'n' index, for all 'i' from 0 to ‘n-1'.
+
+Example:
+Input: 'n' = 5 , ‘arr’ = [3, 4, 5, 1, 2]
+
+Output: 3 
+
+Explanation:
+If we rotate the array [1 ,2, 3, 4, 5] right '3' times then we will get the 'arr'. Thus 'r' = 3.
+
+SOLUTION:-
+#include<bits/stdc++.h>
+
+int findKRotation(vector<int> &arr){
+    // Write your code here.    
+    int n=arr.size();
+    int l=0;
+    int h=n-1;
+    int ans=INT_MAX;
+    int index=-1;
+    while(l<=h){
+        int mid=(l+h)/2;
+        if(arr[l]<=arr[mid]){
+            if(arr[l]<=ans){
+                ans=arr[l];
+                index=l;
+            }
+            l=mid+1;
+        }
+        else{
+             if(arr[mid]<=ans){
+                ans=arr[mid];
+                index=mid;
+            }
+            h=mid-1;
+        }
+
+    }
+    return index;
+}
