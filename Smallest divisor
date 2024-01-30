@@ -1,0 +1,51 @@
+Problem statement
+You are given an array of integers 'arr' and an integer 'limit'.
+Your task is to find the smallest positive integer divisor, such that upon dividing all the elements of the given array by it, the sum of the division's result is less than or equal to the given integer's limit.
+
+Note:
+Each result of the division is rounded to the nearest integer greater than or equal to that element. For Example, 7/3 = 3.
+Detailed explanation ( Input/output format, Notes, Images )
+Sample Input 1 :
+5
+1 2 3 4 5
+8  
+Sample Output 1 :
+3
+Explanation for Sample Input 1 :
+We can get a sum of 15(1 + 2 + 3 + 4 + 5) if we choose 1 as a divisor. 
+The sum is 9(1 + 1 + 2 + 2 + 3)  if we choose 2 as a divisor, and the sum is 7(1 + 1 + 1 + 2 + 2) if we choose 3 as a divisor, which is less than the 'limit'.
+Hence we return 3.
+
+SOLUTION:-
+int maxFun(vector<int>& arr){
+    int n=arr.size();
+    int maxi=INT_MIN;
+    for(int i=0;i<n;i++){
+        maxi=max(maxi,arr[i]);
+    }
+    return maxi;
+}
+
+int smallestDivisor(vector<int>& arr, int limit)
+{
+	// Write your code here.
+	int n=arr.size();
+	if(n>limit) return -1;
+	//int ans;
+	int low=1;
+	int high=maxFun(arr);
+	while(low<=high){
+		int mid=(low+high)/2;
+		int sum=0;
+		for(int i=0;i<n;i++){
+        sum+=ceil((double)(arr[i])/(double)(mid));
+	}
+       if(sum>limit){
+		   low=mid+1;
+	   }
+	   else{
+		   high=mid-1;
+	   }
+	}
+	return low;
+}
