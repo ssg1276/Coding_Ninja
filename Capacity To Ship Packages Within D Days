@@ -1,0 +1,52 @@
+Problem statement
+You are the owner of a Shipment company. You use conveyor belts to ship packages from one port to another. The packages must be shipped within 'd' days.
+
+The weights of the packages are given in an array 'weights'. The packages are loaded on the conveyor belts every day in the same order as they appear in the array. The loaded weights must not exceed the maximum weight capacity of the ship.
+
+Find out the least-weight capacity so that you can ship all the packages within 'd' days.
+
+Detailed explanation ( Input/output format, Notes, Images )
+Sample Input 1:
+8 5
+5 4 5 2 3 4 5 6
+Sample Output 1:
+9
+
+SOLUTION:-
+#include <bits/stdc++.h>
+
+
+int findDay(vector<int>& weights, int cap){
+        int day=1;
+        int load=0;
+        int n=weights.size();
+        for(int i=0;i<n;i++){
+            if(load+weights[i]>cap){
+                day+=1;
+                load=weights[i];
+            }
+            else{
+                load+=weights[i];
+            }
+        }
+        return day;
+    }
+
+       
+int leastWeightCapacity(vector<int> &weights, int d)
+{
+ int n=weights.size();
+        int low = *max_element(weights.begin(), weights.end());
+        int high = accumulate(weights.begin(), weights.end(), 0);
+        while(low<=high){
+            int mid=(low+high)/2;
+            int noday=findDay(weights,mid);
+            if(noday<=d){
+                high=mid-1;
+            }
+            else{
+                low=mid+1;
+            }
+        }
+        return low;
+    }
