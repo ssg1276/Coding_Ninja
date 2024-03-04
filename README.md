@@ -35,3 +35,4 @@ Q32:- https://www.codingninjas.com/studio/problems/introduction-to-linked-list_8
 Q33:- https://www.codingninjas.com/studio/problems/count-nodes-of-linked-list_5884?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=PROBLEM&count=25&page=1&search=&sort_entity=order&sort_order=ASC
 Q34:- https://www.codingninjas.com/studio/problems/delete-head-of-a-given-linked-list_9941216?leftPanelTabValue=SUBMISSION
 Q35:- https://www.codingninjas.com/studio/problems/delete-node-of-linked-list_8160463?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=PROBLEM
+Q36:- https://www.codingninjas.com/studio/problems/delete-node-in-ll_5881?leftPanelTabValue=PROBLEM
