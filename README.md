@@ -33,3 +33,4 @@ Q30:- https://www.codingninjas.com/studio/problems/capacity-to-ship-packages-wit
 Q31:- https://www.codingninjas.com/studio/problems/aggressive-cows_1082559?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q32:- https://www.codingninjas.com/studio/problems/introduction-to-linked-list_8144737?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=PROBLEM
 Q33:- https://www.codingninjas.com/studio/problems/count-nodes-of-linked-list_5884?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=PROBLEM&count=25&page=1&search=&sort_entity=order&sort_order=ASC
+Q34:- https://www.codingninjas.com/studio/problems/delete-head-of-a-given-linked-list_9941216?leftPanelTabValue=SUBMISSION
