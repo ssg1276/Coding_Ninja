@@ -1,0 +1,42 @@
+Problem statement
+You are given a singly linked list of length ’n’ . Your task is to delete the head of a linked list.
+
+For Example:-
+Input: 5 -> 8 -> 3 -> 7 -> 9
+
+Output: 8 -> 3 -> 7 -> 9
+
+SOLUTION:-
+/*
+Following is the class structure of the Node class:
+
+class Node
+{
+public:
+    int data;
+    Node *next;
+    Node()
+    {
+        this->data = 0;
+        next = NULL;
+    }
+    Node(int data)
+    {
+        this->data = data; 
+        this->next = NULL;
+    }
+    Node(int data, Node* next)
+    {
+        this->data = data;
+        this->next = next;
+    }
+};
+*/
+
+Node * deleteHead(Node *head) {
+    // Write your code here.
+    Node* temp =head;
+    head=head->next;
+    delete temp;
+    return head; 
+}
