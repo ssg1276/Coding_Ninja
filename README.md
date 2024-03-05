@@ -37,3 +37,4 @@ Q34:- https://www.codingninjas.com/studio/problems/delete-head-of-a-given-linked
 Q35:- https://www.codingninjas.com/studio/problems/delete-node-of-linked-list_8160463?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=PROBLEM
 Q36:- https://www.codingninjas.com/studio/problems/delete-node-in-ll_5881?leftPanelTabValue=PROBLEM
 Q37:- https://www.codingninjas.com/studio/problems/introduction-to-doubly-linked-list_8160413?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=SUBMISSION
+Q38:- https://www.codingninjas.com/studio/problems/non-head-node-deletion_9719173?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=SUBMISSION
