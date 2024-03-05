@@ -1,0 +1,52 @@
+Problem statement
+There exists a doubly linked list with nodes containing integer values. You are given a specified node of the list which you have to delete.
+
+Note:
+
+The node to be deleted is guaranteed not to be the head of the list.
+EXAMPLE:
+Input :
+List = 1 <-> 2 <-> 3 <-> 4
+Node = '3', its position k = 3
+
+Output:
+1 <-> 2 <-> 4
+
+SOLUTION:-
+/************************************************************
+
+    Following is the linkedList class structure:
+
+    class Node {
+    public:
+        int data;
+        Node *next;
+        Node *prev;
+
+        Node(int val) {
+            this->data = val;
+            next = NULL;
+            prev = NULL;
+        }
+    };
+
+************************************************************/
+
+void deleteNode(Node* node) {
+    //Write your code here.
+    Node* prevEl=node->prev;
+    Node* frontEl=node->next;
+
+    if(frontEl==NULL){
+        prevEl->next=NULL;
+        node->prev=NULL;
+         delete node;
+         return;
+
+    }
+    prevEl->next=frontEl;
+    frontEl->prev=prevEl;
+    node->next=node->prev=NULL;
+    delete node;
+    return;
+}
