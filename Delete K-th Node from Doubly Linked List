@@ -1,0 +1,76 @@
+Problem statement
+You are given a Doubly linked list, where every node in the linked list contains two pointers, ‘next’ and ‘prev’, which point to the next node and previous node in the list respectively. All nodes have some positive integer value associated with them.
+Your task is to delete the node at the ‘k’-th position.
+
+Note:
+The 'k' given will always be less than or equal to the length of the 'list'.
+
+Example:
+ Input: ‘k’ = 3, 'list' = [1, 2, 5, 4]
+
+ Output: [1, 2, 4]
+
+SOLUTION;-
+/*
+ * Definition for linked list.
+ * class Node {
+ *  public:
+ *		int val;
+ *		Node *next;
+ * 		Node *prev;
+ *		Node() : val(0), next(nullptr), prev(nullptr){};
+ *		Node(int x) : val(x), next(nullptr), prev(nullptr) {}
+ *		Node(int x, Node *next, Node *prev) : val(x), next(next), prev(prev) {}
+ * };
+ */
+
+Node *deleteNode(Node *head, int k){
+    // Write your code here
+    if(head==NULL){
+        return NULL;
+    }
+    Node* temp=head;
+    int cnt=0;
+    while(temp!=NULL){
+        cnt++;
+        if(cnt==k){
+            break;
+        }
+        temp=temp->next;
+    }
+    Node* prevEl=temp->prev;
+    Node* frontEl=temp->next;
+    if(prevEl==NULL && frontEl==NULL){
+        return NULL;
+
+    }
+    else if(prevEl==NULL){
+        Node* node=head;
+        head=head->next;
+        node->next=NULL;
+        head->prev=NULL;
+        delete node;
+        return head;
+    }
+    else if(frontEl==NULL){
+        Node* node=head;
+        while(node->next!=NULL){
+            node=node->next;
+
+        }
+        Node* newTail=node->prev;
+        newTail->next=NULL;
+        node->prev=NULL;
+        delete node;
+        return head;
+        
+    }
+    else{
+        prevEl->next=frontEl;
+        frontEl->prev=prevEl;
+        temp->next=NULL;
+        temp->prev=NULL;
+        delete temp;
+        return head;
+    }
+}
