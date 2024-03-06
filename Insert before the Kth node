@@ -1,0 +1,93 @@
+Problem statement
+You are given a Doubly linked list, where every node in the linked list contains two pointers, ‘next’ and ‘prev’, which point to the next node and previous node in the list respectively. All nodes have some positive integer value associated with them.
+Your task is to insert an integer value ‘val’ in the linked list before the ‘k’-th node.
+
+Note:
+The k given will always be less than or equal to the length of the linked list.
+Example:
+Input :
+‘k’ = 3, ‘val’ = 5
+list = [1, 2, 4]
+Output: [1, 2, 5, 4]
+
+The ‘val’ = 5, is inserted before the 3rd node, which is '4'.
+
+SOLUTION:-
+/************************************************************
+
+    Following is the linkedList class structure:
+
+    class Node {
+    public:
+        int data;
+        Node *next;
+        Node *prev;
+
+        Node(int val) {
+            this->data = val;
+            next = NULL;
+            prev = NULL;
+        }
+        ~Node() {
+            if(next != NULL || prev != NULL){
+                delete next;
+            }
+        }
+};
+
+************************************************************/
+
+Node* insert(Node *head, int k, int val) {
+    // Write Your Code Here.
+    if(k==1){
+
+     Node* newHead= new Node(val);
+       newHead->next=head;
+       head->prev=newHead;
+       newHead->prev=NULL;
+
+       return newHead;
+    }
+    int cnt=0;
+    Node* temp=head;
+    while(temp!=NULL){
+        cnt++;
+        if(cnt==k){
+            break;
+        }
+        temp=temp->next;
+    }
+    Node* prevEl=temp->prev;
+//     Node* frontEl=temp->next;
+   
+//    if(prevEl==NULL && frontEl==NULL){
+//        return new Node(val);
+//    }
+//    else if(prevEl==NULL){
+    //    Node* newHead= new Node(val);
+    //    newHead->next=head;
+    //    head->prev=newHead;
+    //    newHead->prev=NULL;
+
+    //    return head;
+//    }
+//    else if(frontEl=NULL){
+//        Node* tail=head;
+//        while(tail!=NULL){
+//        temp=temp->next;
+//        }
+//        Node* newNode=new Node(val);
+//        newNode->prev=tail->prev;
+//        tail->prev=newNode;
+//        return head;
+//    }
+   
+       Node* newNODE=new Node(val);
+       prevEl->next=newNODE;
+       newNODE->prev=prevEl;
+       newNODE->next=temp;
+       temp->prev=newNODE;
+
+       return head;
+   
+}
