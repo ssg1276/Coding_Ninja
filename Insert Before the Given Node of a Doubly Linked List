@@ -1,0 +1,55 @@
+Problem statement
+There exists a doubly-linked list of length ’n’ containing distinct values.
+
+You are given a node of the doubly linked list having value ’x’. This node is not the head node of the list.
+
+Your task is to add a new node with value ’val’ before the given node with value ’x’.
+
+Note:
+A doubly-linked list is a data structure that consists of sequentially linked records, and the nodes have reference to both the previous and the next nodes in the sequence of nodes.
+For Example:-
+Input: 
+5 <-> 8 <-> 3 <-> 7 <-> 9
+val = 2
+x = 3
+
+Output: 5 <-> 8 <-> 2 <-> 3 <-> 7 <-> 9
+
+SOLUTION:-
+/*
+Following is the class structure of the Node class:
+
+class Node
+{
+public:
+    int data;
+    Node *next;
+    Node *prev;
+    Node()
+    {
+        this->data = 0;
+        next = NULL;
+        prev=NULL;
+    }
+    Node(int data)
+    {
+        this->data = data; 
+        this->next = NULL;
+        this->next= NULL;
+    }
+    Node(int data, Node* next, Node *prev)
+    {
+        this->data = data;
+        this->next = next;
+        this->prev= prev;
+    }
+};
+*/
+
+void insertAtGivenNode(Node *node, int val) {
+    // Write your code here.
+    Node* prevEl=node->prev;
+    Node* newNode=new Node(val,node,prevEl);
+    prevEl->next=newNode;
+    node->prev=newNode;
+}
