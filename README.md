@@ -42,3 +42,4 @@ Q39:-https://www.codingninjas.com/studio/problems/delete-k-th-node-from-doubly-l
 Q40:-https://www.codingninjas.com/studio/problems/insert-at-the-front-of-a-doubly-linked-list_9697366?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=PROBLEM
 Q41:- https://www.codingninjas.com/studio/problems/insert-at-end-of-doubly-linked-list_10491197?leftPanelTabValue=SUBMISSION
 Q42:- https://www.codingninjas.com/studio/problems/insertion-in-doubly-linked-list_9702888?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=SUBMISSION
+Q43:- https://www.codingninjas.com/studio/problems/insert-at-the-front-of-a-doubly-linked-list_9697867?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=SUBMISSION
