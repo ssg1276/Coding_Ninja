@@ -1,0 +1,38 @@
+Problem statement
+You are given a doubly-linked list of length ‘n’.
+You must insert a node having the value ‘k’ in the front of the doubly linked list.
+
+Note:
+A doubly-linked list is a data structure that consists of sequentially linked records, and the nodes have reference to both the previous and the next nodes in the sequence of nodes.
+For Example:
+Input: Linked List: 4 <-> 10 <-> 3 <-> 5 and ‘k’ = 20
+
+Output: Modified Linked List: 20 <-> 4 <-> 10 <-> 3 <-> 5
+
+
+SOLUTION:-
+/**
+ * Definition of doubly linked list:
+ *
+ * struct Node {
+ *      int value;
+ *      Node *prev;
+ *      Node *next;
+ *      Node() : value(0), prev(nullptr), next(nullptr) {}
+ *      Node(int val) : value(val), prev(nullptr), next(nullptr) {}
+ *      Node(int val, Node *p, Node *n) : value(val), prev(p), next(n) {}
+ * };
+ *
+ *************************************************************************/
+
+Node* insertAtFront(Node *head, int k) {
+    // Write your code here.
+    if(head==NULL){
+     Node* newHead=new Node(k);
+     return newHead;
+    }
+   
+    Node* newHead=new Node(k,NULL,head);
+    head->prev=newHead;
+    return newHead;
+}
