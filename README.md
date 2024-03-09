@@ -44,3 +44,4 @@ Q41:- https://www.codingninjas.com/studio/problems/insert-at-end-of-doubly-linke
 Q42:- https://www.codingninjas.com/studio/problems/insertion-in-doubly-linked-list_9702888?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=SUBMISSION
 Q43:- https://www.codingninjas.com/studio/problems/insert-at-the-front-of-a-doubly-linked-list_9697867?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=SUBMISSION
 Q44:-https://www.codingninjas.com/studio/problems/add-two-numbers_1170520?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
+Q45:-https://www.codingninjas.com/studio/problems/delete-kth-node-from-end_799912?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
