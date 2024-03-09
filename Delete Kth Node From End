@@ -1,0 +1,64 @@
+Problem statement
+You have been given a singly Linked List of 'N' nodes with integer data and an integer 'K'.
+
+Your task is to remove the 'K'th node from the end of the given Linked List and return the head of the modified linked list.
+
+Example:
+Input : 1 -> 2 -> 3 -> 4 -> 'NULL'  and  'K' = 2
+Output: 1 -> 2 -> 4 -> 'NULL'
+
+SOLUTION:-
+/*
+Following is the class structure of the Node class:
+
+class Node
+{
+public:
+    int data;
+    Node *next;
+    Node()
+    {
+        this->data = 0;
+        next = NULL;
+    }
+    Node(int data)
+    {
+        this->data = data; 
+        this->next = NULL;
+    }
+    Node(int data, Node* next)
+    {
+        this->data = data;
+        this->next = next;
+    }
+};
+*/
+
+Node* removeKthNode(Node* head, int K)
+{
+    // Write your code here.
+    Node* fast=head;
+    for(int i=0;i<K;i++){
+        fast=fast->next;
+    }
+    
+ if(fast==NULL){
+     Node* newHead=head;
+     head=head->next;
+     delete newHead;
+     return head;
+     
+ }
+    Node* slow=head;
+    while(fast->next!=NULL){
+        fast=fast->next;
+        slow=slow->next;
+    }
+
+
+    Node* delNode=slow->next;
+    slow->next=slow->next->next;
+    delete delNode;
+    return head;
+}
+
