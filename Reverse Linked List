@@ -1,0 +1,56 @@
+Problem statement
+You are given a Singly Linked List of integers. You need to reverse the Linked List by changing the links between nodes.
+
+Example:
+Input:
+2 4 5 -1
+
+Output:
+5 4 2 -1
+
+SOLUTION:-
+/****************************************************************
+
+    Following is the class structure of the Node class:
+
+        class Node
+        {
+        public:
+            int data;
+            Node *next;
+            Node()
+            {
+                this->data = 0;
+                next = NULL;
+            }
+            Node(int data)
+            {
+                this->data = data;
+                this->next = NULL;
+            }
+            Node(int data, Node* next)
+            {
+                this->data = data;
+                this->next = next;
+            }
+        };
+        
+
+*****************************************************************/
+
+Node* reverseLinkedList(Node *head)
+{
+    
+    if(head==NULL || head->next==NULL){
+        return head;
+    }
+    Node* prevEl=NULL;
+    Node* temp=head;
+    while(temp!=NULL){
+        Node* frontEl=temp->next;
+        temp->next=prevEl;
+        prevEl=temp;
+        temp=frontEl;
+    }
+    return prevEl;
+}
