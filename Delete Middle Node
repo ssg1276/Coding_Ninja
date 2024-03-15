@@ -1,0 +1,58 @@
+Problem statement
+Given a singly linked list of 'N' nodes. Your task is to delete the middle node of this list and return the head of the modified list.
+
+However, if the list has an even number of nodes, we delete the second middle node
+
+Example:
+If given linked list is 1->2->3->4 then it should be modified to 1->2->4.
+Detailed explanation ( Input/output format, Notes, Images )
+Sample Input 1 :
+5
+1 2 3 4 5
+Sample Output 1 :
+1 2 4 5 
+
+SOLUTION:-
+/*
+Following is the class structure of the Node class:
+
+class Node
+{
+public:
+    int data;
+    Node *next;
+    Node()
+    {
+        this->data = 0;
+        next = NULL;
+    }
+    Node(int data)
+    {
+        this->data = data; 
+        this->next = NULL;
+    }
+    Node(int data, Node* next)
+    {
+        this->data = data;
+        this->next = next;
+    }
+};
+*/
+
+Node* deleteMiddle(Node* head){
+    // Write your code here.
+    if(head==NULL || head->next==NULL){
+        return NULL;
+    }
+    Node* slow=head;
+    Node* fast=head;
+    while(fast->next->next!=NULL && fast->next->next->next!=NULL){
+        slow=slow->next;
+        fast=fast->next->next;
+    }
+    Node* temp=slow->next;
+    slow->next=temp->next;
+    temp->next=NULL;
+    delete temp;
+    return head;
+}
