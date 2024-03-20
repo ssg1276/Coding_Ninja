@@ -1,0 +1,89 @@
+Problem statement
+Given a linked list of 'N' nodes, which has nodes in alternating non-decreasing and non-increasing. Sort the list in non-decreasing order.
+For Example:
+
+If given linked list is 1->9->3->8->4 then it should be modified to 1->3->4->8->9.
+Sample Input 1 :
+7
+1 9 2 8 3 7 4 
+Sample Output 1 :
+1 2 3 4 7 8 9
+
+SOLUTION:-
+/*
+Following is the class structure of the Node class:
+
+class Node
+{
+public:
+    int data;
+    Node *next;
+    Node()
+    {
+        this->data = 0;
+        next = NULL;
+    }
+    Node(int data)
+    {
+        this->data = data; 
+        this->next = NULL;
+    }
+    Node(int data, Node* next)
+    {
+        this->data = data;
+        this->next = next;
+    }
+};
+*/
+Node* findMiddleValue(Node* head){
+    Node* slow=head;
+    Node* fast=head->next;
+    while(fast!=NULL && fast->next!=NULL){
+        slow=slow->next;
+        fast=fast->next->next;
+
+    }
+    return slow;
+}
+
+Node*  mergeTwoLists(Node* h1,Node* h2 ){
+    Node* dummyNode=new Node(-1);
+    Node* t1=h1;
+    Node* t2=h2;
+    Node* temp=dummyNode;
+
+    while(t1!=NULL && t2!=NULL){
+        if(t1->data <t2->data){
+            temp->next=t1;
+            temp=t1;
+            t1=t1->next;
+        }
+        else{
+            temp->next=t2;
+            temp=t2;
+            t2=t2->next;
+        }
+
+    }
+    if(t1) temp->next=t1;
+    else temp->next=t2;
+
+    return dummyNode->next;
+}
+
+Node* sortList(Node* head){
+  if(head==NULL || head->next==NULL){
+      return head;
+
+  }
+  Node* middle=findMiddleValue(head);
+  Node* left=head;
+  Node* right=middle->next;
+  middle->next=NULL;
+
+  left=sortList(left);
+  right=sortList(right);
+  
+  return mergeTwoLists(left,right);
+  
+  }
