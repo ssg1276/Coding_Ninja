@@ -1,0 +1,61 @@
+Problem statement
+A doubly-linked list is a data structure that consists of sequentially linked nodes, and the nodes have reference to both the previous and the next nodes in the sequence of nodes.
+You’re given a doubly-linked list and a key 'k'.
+Delete all the nodes having data equal to ‘k’.
+
+Example:
+Input: Linked List: 10 <-> 4 <-> 10 <-> 3 <-> 5 <-> 20 <-> 10 and ‘k’ = 10
+Output: Modified Linked List: 4 <-> 3 <-> 5 <-> 20
+
+SOLUTION:-
+/**
+ * Definition of doubly linked list:
+ *
+ * class Node {
+ * public:
+ *      int data;
+ *      Node *prev;
+ *      Node *next;
+ *      Node() {
+ *          this->data = 0;
+ *          this->prev = NULL;
+ *          this->next = NULL;
+ *      }
+ *      Node(int data) {
+ *          this->data = data;
+ *          this->prev = NULL;
+ *          this->next = NULL;
+ *      }
+ *      Node (int data, Node *next, Node *prev) {
+ *          this->data = data;
+ *          this->prev = prev;
+ *          this->next = next;
+ *      }
+ * };
+ *
+ *************************************************************************/
+
+Node * deleteAllOccurrences(Node* head, int k) {
+    // Write your code here
+    if(head==NULL ){
+        return head;
+    }
+    Node* temp=head;
+    while(temp!=NULL){
+        if(temp->data==k){
+            if(temp==head){
+                head=head->next;
+            }
+            Node* nextNode=temp->next;
+            Node* prevNode=temp->prev;
+           
+           if(nextNode) {nextNode->prev=prevNode;}
+           if(prevNode) {prevNode->next=nextNode;}
+            delete temp;
+        }
+        else{
+            temp=temp->next;
+        }
+    }
+    return head;
+}
