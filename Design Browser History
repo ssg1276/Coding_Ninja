@@ -1,0 +1,73 @@
+Problem statement
+Your task is to maintain a data structure that supports the following functions of a web browser.
+
+1- Browser(homepage): Set homepage of the browser
+2- Visit(url): Visit the url from the current page. It clears up all the forward history.
+3- Back(steps): Move ‘steps’ backward in the browser history
+4- Forward(steps): Move ‘steps’ forward in the browser history
+
+SOLUTION:-
+
+class Node{
+    public:
+
+    string data;
+    Node* next;
+    Node* prev;
+
+    Node(): data(0),next(nullptr),prev(nullptr){};
+    Node(string x): data(x),next(nullptr),prev(nullptr){};
+    Node(string x,Node* nextVal,Node* prevVal):data(x),next(nextVal),prev(prevVal){};
+};
+
+
+class Browser
+{
+    Node* current;
+    public:
+    
+    Browser(string &homepage)
+    {
+        // Write you code here
+        current = new Node(homepage);
+    }
+
+    void visit(string &url)
+    {
+        // Write you code here
+        Node* newNode=new Node(url);
+        current->next=newNode;
+        newNode->prev=current;
+        current=newNode;
+    }
+
+    string back(int steps)
+    {
+        // Write you code here
+        while(steps){
+            if(current->prev){
+                current=current->prev;
+            }
+            else{
+                break;
+            }
+            steps--;
+        }
+        return current->data;
+    }
+
+    string forward(int steps)
+    {
+        // Write you code here
+         while(steps){
+            if(current->next){
+                current=current->next;
+            }
+            else{
+                break;
+            }
+            steps--;
+        }
+        return current->data;
+    }
+};
