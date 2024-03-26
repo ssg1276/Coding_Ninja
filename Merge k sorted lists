@@ -1,0 +1,68 @@
+Problem statement
+Given 'k' sorted linked lists, each list is sorted in increasing order. You need to merge all these lists into one single sorted list. You need to return the head of the final linked list.
+
+For example:
+Input:
+3
+3
+4 6 8
+3
+2 5 7 
+2
+1 9
+
+Output:
+1 2 4 5 6 7 8 9 
+
+SOLUTION:-
+/*
+Following is the class structure of the Node class:
+
+class Node
+{
+public:
+    int data;
+    Node *next;
+    Node()
+    {
+        this->data = 0;
+        next = NULL;
+    }
+    Node(int data)
+    {
+        this->data = data; 
+        this->next = NULL;
+    }
+    Node(int data, Node* next)
+    {
+        this->data = data;
+        this->next = next;
+    }
+};
+*/
+
+Node* mergeKLists(vector<Node*> &listArray){
+
+
+     priority_queue<pair<int,Node*>,
+        vector<pair<int,Node*>>,greater<pair<int,Node*>>>pq;
+        int n=listArray.size();
+        for(int i=0;i<n;i++){
+            if(listArray[i]){
+                pq.push({listArray[i]->data,listArray[i]});
+            }
+        }
+        Node* dummyNode=new Node(-1);
+        Node* temp=dummyNode;
+        while(!pq.empty()){
+            auto it=pq.top();
+            pq.pop();
+            if(it.second->next){
+                pq.push({it.second->next->data,it.second->next});
+            }
+            temp->next=it.second;
+            temp=temp->next;
+        }
+        return dummyNode->next;
+    }
+
