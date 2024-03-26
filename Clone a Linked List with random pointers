@@ -1,0 +1,60 @@
+Problem statement
+You are given a linked list containing 'n' nodes, where every node in the linked list contains two pointers:
+(1) ‘next’ which points to the next node in the list
+(2) ‘random’ which points to a random node in the list or 'null'.
+Your task is to create a 'deep copy' of the given linked list and return its head.
+Note:
+A 'deep copy' of a linked list means we do not copy the references of the nodes of the original linked list, rather for each node in the original linked list, a new node is created.
+
+Detailed explanation ( Input/output format, Notes, Images )
+Sample Input 1:
+5
+1 2 3 4 5
+2 0 4 4 1
+
+Sample Output 1:
+True
+
+SOLUTION:-
+/*
+ * Definition for linked list.
+ * class Node {
+ *  public:
+ *		int data;
+ *		Node *next;
+ * 		Node *random;
+ *		Node() : data(0), next(nullptr), random(nullptr){};
+ *		Node(int x) : data(x), next(nullptr), random(nullptr) {}
+ *		Node(int x, Node *next, Node *random) : data(x), next(next), random(random) {}
+ * };
+ */
+
+Node *cloneLL(Node *head){
+	// Write your code here
+	Node* temp=head;
+	while(temp!=NULL){
+		Node* copy=new Node(temp->data);
+		copy->next=temp->next;
+		temp->next=copy;
+		temp=temp->next->next;
+	}
+
+ temp=head;
+	while(temp!=NULL){
+		if(temp->random!=NULL){
+			temp->next->random=temp->random->next;
+			}
+			temp=temp->next->next;
+	}
+
+	Node* dummyNode=new Node(-1);
+	Node* res=dummyNode;
+	 temp=head;
+	while(temp!=NULL){
+		res->next=temp->next;
+		temp->next=temp->next->next;
+		res=res->next;
+		temp=temp->next;
+	}
+	return dummyNode->next;
+}
