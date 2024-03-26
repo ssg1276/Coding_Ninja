@@ -63,3 +63,4 @@ Q60:-https://www.codingninjas.com/studio/problems/reverse-list-in-k-groups_98364
 Q61:-https://www.codingninjas.com/studio/problems/add-one-to-a-number-represented-as-linked-list_920557?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q62:-https://www.codingninjas.com/studio/problems/design-browser-history_2427908?leftPanelTabValue=PROBLEM
 Q63:-https://www.codingninjas.com/studio/problems/flatten-a-linked-list_1112655?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
+Q64:-https://www.codingninjas.com/studio/problems/clone-a-linked-list-with-random-pointers_983604?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
