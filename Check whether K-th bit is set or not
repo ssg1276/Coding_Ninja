@@ -1,0 +1,20 @@
+Problem statement
+Given a number ‘N’ and a number ‘K’. Return true if ‘K’th bit of number is set, else return false.
+
+Example:
+Input: ‘N’ = 5, ‘K’ = 1
+
+Output: YES
+
+SOLUTION:-
+bool isKthBitSet(int n, int k)
+{
+    // Write your code here.
+    
+    if ((n & (1 << k-1)) != 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
