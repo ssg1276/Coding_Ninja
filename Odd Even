@@ -1,0 +1,19 @@
+Problem statement
+You are given an integer 'N'.
+Return 'odd' if the given number 'N' is odd, else return 'even'.
+
+For Example:
+N=5
+
+Output: odd
+
+SOLUTION;-
+string oddEven(int N){
+    // Write your code here.
+    if((N & 1)==0){
+        return "even";
+    }
+    else{
+        return "odd";
+    }
+}
