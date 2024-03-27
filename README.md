@@ -67,3 +67,4 @@ Q64:-https://www.codingninjas.com/studio/problems/clone-a-linked-list-with-rando
 Q65:-https://www.codingninjas.com/studio/problems/merge-k-sorted-lists_992772?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM&customSource=studio_nav
 Q66:-https://www.naukri.com/code360/problems/swap-two-numbers_1380853?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q67:-https://www.naukri.com/code360/problems/check-whether-k-th-bit-is-set-or-not_5026446?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+Q68:-https://www.naukri.com/code360/problems/odd-even_7993579?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
