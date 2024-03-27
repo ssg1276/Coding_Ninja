@@ -1,0 +1,19 @@
+Problem statement
+You are given two numbers 'a' and 'b' as input.
+You must swap the values of 'a' and 'b'.
+
+For Example:
+Input: 
+'a' = 8, 'b' = 5
+
+Output:
+5 8
+
+SOLUTION:-
+BIT manuplition
+void swapNumber(int &a, int &b) {
+	// Write your code here.
+	a=a^b;
+	b=a^b;
+	a=a^b;
+}
