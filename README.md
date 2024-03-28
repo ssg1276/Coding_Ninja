@@ -69,3 +69,4 @@ Q66:-https://www.naukri.com/code360/problems/swap-two-numbers_1380853?utm_source
 Q67:-https://www.naukri.com/code360/problems/check-whether-k-th-bit-is-set-or-not_5026446?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q68:-https://www.naukri.com/code360/problems/odd-even_7993579?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q69:-https://www.naukri.com/code360/problems/power-of-two_893061?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+Q70:-https://www.naukri.com/code360/problems/flip-bits_8160405?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
