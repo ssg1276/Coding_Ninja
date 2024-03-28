@@ -1,0 +1,20 @@
+Problem statement
+You are given two integers 'A' and 'B'.
+Your objective is to determine the number of bit positions where the corresponding bits of ‘A’ and ‘B’ differ, i.e., the number of bits that need to be flipped in ‘A’ to obtain ‘B’.
+
+Example:
+A = 7
+B = 12
+Output : 3
+
+SOLUTION:-
+int flipBits(int A, int B){
+    // Write your code here.
+    int cnt=0;
+    int ans=A^B;
+    for(int i=0;i<=31;i++){
+      if( ans&(1<<i))  
+         cnt++;
+    }
+    return cnt++;
+}
