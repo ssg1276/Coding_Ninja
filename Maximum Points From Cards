@@ -1,0 +1,35 @@
+Problem statement
+Given an array 'arr' of size 'N' representing the points associated with each card, and an integer 'K' representing the number of cards to be taken. We need to return the maximum score that can be obtained.
+In each step, we can choose to take one card from either the beginning or the end of the row. We must take exactly ‘K’ cards. The score is calculated as the sum of the points of the cards chosen.
+
+For Example:
+Input:
+7 4
+9 7 5 3 2 1 8
+
+Output: 
+29
+
+SOLUTION:-
+int maxPoints(vector<int>&arr , int K){
+    // Write your code here.
+    int l=0;
+    int r=0;
+    int sum=0;
+    int n=arr.size();
+    int rIndex=n-1;
+
+    for(int i=0;i<K;i++){
+        l+=arr[i];
+        sum=l;
+    }
+
+    for(int i=K-1;i>=0;i--){
+        l-=arr[i];
+        r+=arr[rIndex];
+        rIndex--;
+
+        sum=max(sum,l+r);
+    }
+    return sum;
+}
