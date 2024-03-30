@@ -71,3 +71,4 @@ Q68:-https://www.naukri.com/code360/problems/odd-even_7993579?utm_source=striver
 Q69:-https://www.naukri.com/code360/problems/power-of-two_893061?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q70:-https://www.naukri.com/code360/problems/flip-bits_8160405?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q71:-https://www.naukri.com/code360/problems/subsequences-of-string_985087?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+Q72:-https://www.naukri.com/code360/problems/maximum-points-from-cards_8391016?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
