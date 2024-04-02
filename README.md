@@ -74,3 +74,4 @@ Q71:-https://www.naukri.com/code360/problems/subsequences-of-string_985087?utm_s
 Q72:-https://www.naukri.com/code360/problems/maximum-points-from-cards_8391016?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q73:-https://www.naukri.com/code360/problems/-divide-two-integers_1112617?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q74:-https://www.naukri.com/code360/problems/l-to-r-xor_8160412?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+Q75:-https://www.naukri.com/code360/problems/prime-factorisation_1760849?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
