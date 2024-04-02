@@ -9,22 +9,27 @@ Unique prime factors are 2 and 5.
 Hence we return {2, 5}.
 
 SOLUTION:-
-vector<int> countPrimes(int n)
-{
+vector<int> countPrimes(int n) {
     // Write your code here.
-    vector<int> ans;
-    for(int i=2;i<=sqrt(n);i++){
-        if(n%i==0){
-            ans.push_back(i);
-        }
-        while(n%i==0){
-            n=n/i;
-        }
+    int Z=n;
+    vector<int> ans(n + 1, 1); // Initialize all elements to 1
 
+    for (int i = 2; i * i <= n; i++) {
+        if (ans[i] == 1) {
+            for (int j = i * i; j <= n; j += i) {
+                ans[j] = 0; // Mark multiples of i as non-prime
+            }
+        }
+    }
 
+    vector<int> primes;
+    for (int i = 2; i <= n; i++) {
+        if (ans[i] == 1) {
+            if(Z%i==0){  primes.push_back(i);}
+           // Push prime numbers into the primes vector
+        }
     }
-    if(n!=1){
-        ans.push_back(n);
-    }
-    return ans;
+
+    return primes;
 }
+
