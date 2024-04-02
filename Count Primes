@@ -3,6 +3,7 @@ You are given an integer 'N'.
 You must return the unique prime factors of 'N' in increasing order.
 
 
+
 For Example:
 For ‘N’ = 10.
 Unique prime factors are 2 and 5.
