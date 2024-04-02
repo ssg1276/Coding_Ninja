@@ -1,0 +1,27 @@
+Problem statement
+Given an integer ‘N’, your task is to write a program that returns all the divisors of ‘N’ in ascending order.
+
+For example:
+'N' = 5.
+The divisors of 5 are 1, 5.
+
+SOLUTION:-
+int* printDivisors(int n, int &size){
+    // Write your code here
+    vector<int> list;
+    for(int i = 1; i <= sqrt(n); i++) {
+        if(n % i == 0) {
+            list.push_back(i);
+            if(n / i != i) {
+                list.push_back(n / i);
+            }
+        }
+    }
+    sort(list.begin(), list.end());
+    size = list.size();
+    int* result = new int[size];
+    for(int i = 0; i < size; i++) {
+        result[i] = list[i];
+    }
+    return result;
+}
