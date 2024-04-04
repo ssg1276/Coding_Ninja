@@ -77,3 +77,4 @@ Q74:-https://www.naukri.com/code360/problems/l-to-r-xor_8160412?utm_source=striv
 Q75:-https://www.naukri.com/code360/problems/prime-factorisation_1760849?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q76:-https://www.naukri.com/code360/problems/print-all-divisors-of-a-number_1164188?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q77:-https://www.naukri.com/code360/problems/longest-substring-without-repeating-characters_630418?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+Q78:-https://www.naukri.com/code360/problems/maximum-consecutive-ones_892994?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
