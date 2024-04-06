@@ -1,0 +1,21 @@
+Problem statement
+Count the number of substrings which contains at least one occurrence of all these characters: a, b, and c.
+
+Note:
+The count of substrings will always fit in a 32-bit integer. 
+Example:
+For 'n' = 5, 's’ = “abbac”.
+Answer is 3.
+
+SOLUTION:-
+int countSubstring(string s){
+    // Write your code here.
+    int n=s.length();
+    int lastSeen[3]={-1,-1,-1};
+    int cnt=0;
+    for(int i=0;i<n;i++){
+        lastSeen[s[i]-'a']=i;
+        cnt=cnt+(1+min({lastSeen[0],lastSeen[1],lastSeen[2]}));
+    }
+    return cnt;
+}
