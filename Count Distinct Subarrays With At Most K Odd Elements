@@ -1,0 +1,32 @@
+Problem statement
+You are given an array 'arr' of 'N' integers. Your task is to return the total number of distinct subarrays of 'arr' having 'k' odd elements.
+
+Example :
+If arr = [3,2,3], and k = 1 
+then there are 4 subarrays with 1 odd elements:
+[3], [3,2], [2,3] & [3].
+
+SOLUTION:-
+int fun(vector<int> &arr,int k){
+	int l=0;
+	int r=0;
+	int sum=0;
+	int ct=0;
+	int n=arr.size();
+	while(r<n){
+		sum+=arr[r]&1;
+		while(sum>k){
+			sum-=arr[l]&1;
+			l=l+1;
+		}
+		ct=ct+(r-l+1);
+		r=r+1;
+	}
+	return ct;
+}
+
+int distinctSubKOdds(vector<int> &arr, int k)
+{
+	// Write your code here
+	return fun(arr,k)-fun(arr,k-1);
+}
