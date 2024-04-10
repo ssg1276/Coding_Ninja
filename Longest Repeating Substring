@@ -1,0 +1,32 @@
+Problem statement
+You are given a string 'str' of length 'N'. You can perform at most 'k' operations on this string. In one operation, you can choose any character of the string and change it to any other uppercase English alphabet character.
+Return the length of the longest substring containing same characters after performing the above operations.
+
+For example :
+Input:
+str="AABC"  k=1
+Output:3
+
+SOLUTION:-
+#include <bits/stdc++.h>
+
+int longestRepeatingSubstring(string &str, int k) {
+    // Write your code here.
+    int n=str.length();
+    int l=0,r=0,maxlen=0,maxf=0;
+    int hash[26]={0};
+    while(r<n){
+        hash[str[r]-'A']++;
+        maxf=max(maxf,hash[str[r]-'A']);
+
+        if((r-l+1)-maxf>k){
+            hash[str[l]-'A']--;
+            l=l+1;
+        }
+        if((r-l+1)-maxf<=k){
+            maxlen=max(maxlen,(r-l+1));
+        }
+        r++;
+    }
+    return maxlen;
+}
