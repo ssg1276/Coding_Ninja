@@ -84,3 +84,4 @@ Q81:-https://www.naukri.com/code360/problems/count-substrings-with-k-ones_312869
 Q82:-https://www.naukri.com/code360/problems/longest-repeating-substring_980523?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q83:-https://www.naukri.com/code360/problems/spiral-matrix_6922069?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q84:-https://www.naukri.com/code360/problems/4sum_5713771?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+Q85:-https://www.naukri.com/code360/problems/merge-all-overlapping-intervals_6783452?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
