@@ -1,0 +1,28 @@
+Problem statement
+You are given a square matrix ‘Mat’ of size ‘N’. You need to rotate ‘Mat’ by 90 degrees in the clockwise direction.
+
+Note:
+You must rotate the matrix in place, i.e., you must modify the given matrix itself. You must not allocate another square matrix for rotation.
+
+For example
+When,
+‘N’ = 2 and ‘Mat’ = {{1, 2}, {3, 4}}, we must modify ‘Mat’ to {{3, 1}, {4, 2}}.
+
+SOLUTION:-
+#include<vector>
+
+void rotateMatrix(vector<vector<int>> &mat){
+	// Write your code here.
+	int n=mat.size();
+
+	for(int i=0;i<n;i++){
+		for(int j=i;j<n;j++){
+			swap(mat[i][j],mat[j][i]);
+		}
+	}
+	for(int i=0;i<n;i++){
+		reverse(mat[i].begin(),mat[i].end());
+
+	}
+	
+}
