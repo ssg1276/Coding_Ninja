@@ -87,3 +87,4 @@ Q84:-https://www.naukri.com/code360/problems/4sum_5713771?utm_source=striver&utm
 Q85:-https://www.naukri.com/code360/problems/merge-all-overlapping-intervals_6783452?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
 Q86:-https://www.naukri.com/code360/problems/rotate-the-matrix_6825090?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
 Q87:-https://www.naukri.com/code360/problems/subarrays-with-at-most-%E2%80%98k%E2%80%99-distinct-values_1473804?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
+Q88:-https://www.naukri.com/code360/problems/minimum-window-substring_1215004?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
