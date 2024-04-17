@@ -1,0 +1,46 @@
+Problem statement
+You are given two strings ‘A’ and ‘B’. Your task is to return a substring ‘S’ of ‘A’ such that the following conditions hold true :
+
+• You can make ‘B’ from ‘S’ by removing some characters and rearranging some characters zero or more times.
+
+• Length of ‘S’ must be as minimum as possible.
+
+Sample Input 1 :
+fight it 
+Sample Output 1 :
+ight
+
+SOLUTION:-
+string minSubstring(string &a, string &b)
+{
+   int n=a.length();
+   int m=b.length();
+   int l=0,r=0,cnt=0,minLen=INT_MAX,sIndex=-1;
+
+   unordered_map<char,int>hash;
+   for(auto it: b){
+       hash[it]++;
+   }
+
+   while(r<n){
+      if( hash[a[r]]>0){
+          cnt++;
+      }
+      hash[a[r]]--;
+
+      while(cnt==m){
+          int size=r-l+1;
+          if(size<minLen){
+              minLen=size;
+              sIndex=l;
+          }
+          hash[a[l]]++;
+          if(hash[a[l]]>0){
+              cnt--;
+          }
+          l++;
+      }
+      r++;
+   }
+   return sIndex==-1?"":a.substr(sIndex,minLen);
+}
