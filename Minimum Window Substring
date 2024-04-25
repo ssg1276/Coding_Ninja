@@ -5,6 +5,7 @@ You are given two strings ‘A’ and ‘B’. Your task is to return a substrin
 
 • Length of ‘S’ must be as minimum as possible.
 
+
 Sample Input 1 :
 fight it 
 Sample Output 1 :
