@@ -89,3 +89,4 @@ Q86:-https://www.naukri.com/code360/problems/rotate-the-matrix_6825090?utm_sourc
 Q87:-https://www.naukri.com/code360/problems/subarrays-with-at-most-%E2%80%98k%E2%80%99-distinct-values_1473804?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
 Q88:-https://www.naukri.com/code360/problems/minimum-window-substring_1215004?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
 Q89:-https://www.naukri.com/code360/problems/search-in-a-2d-matrix_980531?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
+Q90:-https://www.naukri.com/code360/problems/search-in-a-sorted-2d-matrix_6917532?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
