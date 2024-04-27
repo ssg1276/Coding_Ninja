@@ -1,0 +1,74 @@
+Problem statement
+You are given a 0-indexed 2-D grid ‘g’ of size ‘n’ X ‘m’, where each cell contains a positive integer, and adjacent cells are distinct.
+
+
+
+You need to find the location of a peak element in it. If there are multiple answers, find any of them.
+
+
+
+A peak element is a cell with a value strictly greater than all its adjacent cells.
+
+
+
+Assume the grid to be surrounded by a perimeter of ‘-1s’.
+
+
+
+You must write an algorithm that works in O(n * log(m)) or O(m * log(n)) complexity.
+
+
+
+Note:
+
+In the output, you will see '0' or '1', where '0' means your answer is wrong, and '1' means your answer is correct.
+
+
+Example:
+
+Input: 'n' = 2, 'm' = 2
+'g' = [[8, 6], [10, 1]]
+
+Output: 1
+
+SOLUTION:-
+ int findMaxIndex(vector<vector<int>> &g,int n,int m, int col){
+    int maxValue=-1;
+    int index=-1;
+    for(int i=0;i<n;i++){
+        if(maxValue<g[i][col]){
+            maxValue=g[i][col];
+            index=i;
+        }
+    }
+    return index;
+   }
+
+vector<int> findPeakGrid(vector<vector<int>> &g){
+    // Write your code here.   
+    int n=g.size();
+    int m=g[0].size();
+
+    int low=0;
+    int high=m-1;
+
+    while(low<=high){
+        int mid=(low+high)/2;
+
+        int maxRowIndex=findMaxIndex(g,n,m,mid);  
+        
+        int left=mid-1>=0?g[maxRowIndex][mid-1]:-1;
+        int right=mid+1<m?g[maxRowIndex][mid+1]:-1;
+
+        if(g[maxRowIndex][mid]>left && g[maxRowIndex][mid]>right ){
+            return {maxRowIndex,mid};
+         }
+         else if(g[maxRowIndex][mid]<left){
+            high=mid-1;
+         } else {
+            low = mid + 1;
+         }
+    }
+    return {-1,-1};
+ 
+}
