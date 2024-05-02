@@ -1,0 +1,25 @@
+Problem statement
+You are given a positive integer N, and you have to find the number of ways to represent N as a sum of cubes of two integers(let’s say A and B), such that:
+
+N = A^3 + B^3.
+Note:
+
+1. A should be greater than or equal to one (A>=1).
+2. B should be greater than or equal to zero (B>=0).
+3. (A, B) and (B, A) should be considered different solutions, if A is not equal to B, i.e (A, B) and (B, A) will not be distinct if A=B.
+
+SOLUTION:-
+#include <bits/stdc++.h> 
+int countCubeSumPairs(int n) {
+    // Write your code here.
+    int cnt=0;
+    for(int i=1;i*i*i<=n;i++){
+         for(int j=0;j*j*j<=n;j++){
+             if(n== (i*i*i)+(j*j*j)){
+                 cnt++;
+             }
+         }
+
+    }
+    return cnt;
+}
