@@ -93,3 +93,4 @@ Q89:-https://www.naukri.com/code360/problems/search-in-a-2d-matrix_980531?utm_so
 Q90:-https://www.naukri.com/code360/problems/search-in-a-sorted-2d-matrix_6917532?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
 Q91:-https://www.naukri.com/code360/problems/find-peak-element_7449073?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 Q92:-https://www.naukri.com/code360/problems/sorted-array_6613259?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+Q93:-https://www.naukri.com/code360/problems/cube-sum-pairs_1060717?topList=top-array-coding-interview-questions&problemListRedirection=true&leftPanelTabValue=PROBLEM
