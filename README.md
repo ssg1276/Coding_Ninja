@@ -95,3 +95,4 @@ Q92:-https://www.naukri.com/code360/problems/sorted-array_6613259?utm_source=str
 Q93:-https://www.naukri.com/code360/problems/cube-sum-pairs_1060717?topList=top-array-coding-interview-questions&problemListRedirection=true&leftPanelTabValue=PROBLEM
 Q94:-https://www.naukri.com/code360/problems/count-frequency_920323?topList=top-amazon-coding-interview-questions&problemListRedirection=true&difficulty%5B%5D=Easy&leftPanelTabValue=PROBLEM&count=25&page=1&search=&sort_entity=order&sort_order=ASC&customSource=studio_nav
 Q95:-https://www.naukri.com/code360/problems/elements-occur-more-than-n-k-times_1113146?topList=siddharth-singh-coding-sheet-problems&problemListRedirection=true&leftPanelTabValue=PROBLEM
+Q96:-https://www.naukri.com/code360/problems/valid-parenthesis_795104
